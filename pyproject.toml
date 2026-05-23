@@ -1,0 +1,17 @@
+[project]
+name = "divination"
+version = "0.1.0"
+description = "三枚铜钱法起卦 CLI 工具，结合 AI 进行解卦"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.0",
+]
+
+
+[project.scripts]
+divination = "divination:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
